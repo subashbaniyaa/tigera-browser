@@ -38,7 +38,7 @@ function Header() {
       {openNav && (
         <div className="nav-dropdown" data-testid={`dropdown-${openNav}`}>
           {openNav === 'browser' && <><div className="dropdown-kicker">Tigera Browser</div><a href="#browser">The browser that puts you first <ArrowRight size={16} /></a><a href="#features">Browser features <ArrowRight size={16} /></a><a href="#download">Download Tigera <ArrowRight size={16} /></a></>}
-          {openNav === 'search' && <><div className="dropdown-kicker">Tigera Search</div><a href="#search">Search without being tracked <ArrowRight size={16} /></a><a href="#search">How Tigera Search works <ArrowRight size={16} /></a></>}
+          {openNav === 'search' && <><div className="dropdown-kicker">Tigera Search</div><a href="#search">Search without being tracked <ArrowRight size={16} /></a><a href="#search">How Tigera Search works?<ArrowRight size={16} /></a></>}
           {openNav === 'ai' && <><div className="dropdown-kicker">Tigera AI, your AI assistant</div><a href="#leo">Ask tigera AI anything <ArrowRight size={16} /></a><a href="#leo">Private by design <ArrowRight size={16} /></a></>}
           {openNav === 'business' && <><div className="dropdown-kicker">Tigera for business</div><a href="#developers">Search API <ArrowRight size={16} /></a><a href="#developers">Tigera Ads <ArrowRight size={16} /></a></>}
         </div>
@@ -107,8 +107,8 @@ function Home() {
           <div className="hero-background-word"> </div>
           <div className="hero-copy">
             <h1 className="reveal reveal-delay-1">The browser<br />that <em>puts you first.</em></h1>
-            <p className="hero-description reveal reveal-delay-2">Block ads. Save data. And browse faster. Tigera is a privacy-first browser that puts you back in control.</p>
-            <div className="hero-buttons reveal reveal-delay-3"><a className="primary-button" href="#download" data-testid="button-hero-download">Get Tigera Browser <ArrowRight size={18} /></a><a className="text-button" href="#features" data-testid="link-hero-features">See how it works <ArrowDownRight size={17} /></a></div>
+            <p className="hero-description reveal reveal-delay-2">Block ads. Save data. And get way faster webpages just by switching your browser. Tigera is a privacy-first browser that puts you back in control.</p>
+            <div className="hero-buttons reveal reveal-delay-3"><a className="primary-button" href="#download" data-testid="button-hero-download">Get Tigera <ArrowRight size={18} /></a><a className="text-button" href="#features" data-testid="link-hero-features">See how it works <ArrowDownRight size={17} /></a></div>
            
           </div>
           <BrowserArtwork />
