@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Brave Browser Recreation"
+description = "An authorized recreation of the Brave homepage, matching its current public visual language, messaging, responsive layout, and interactive browser product highlights."
+version = "1.0.0"
+id = "artifacts/brave-clone"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22466
+
+[services.development]
+run = "pnpm --filter @workspace/brave-clone run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/brave-clone", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/brave-clone/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22466"
+BASE_PATH = "/"
