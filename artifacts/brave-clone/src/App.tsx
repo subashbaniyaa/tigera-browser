@@ -90,6 +90,7 @@ function BrowserArtwork() {
       <div className="browser-page">
 
         <div className="art-title">
+        <br />
           The web,
           <br />
           <em>
@@ -124,8 +125,8 @@ function BrowserArtwork() {
                 src={logo}
                 alt="Tigera"
                 style={{
-                  width: '24px',
-                  height: '24px',
+                  width: '20px',
+                  height: '20px',
                   objectFit: 'contain',
                   filter: 'brightness(0)',
                   opacity: 0.9,
@@ -182,8 +183,8 @@ function BrowserArtwork() {
                 src={logo}
                 alt="Tigera"
                 style={{
-                  width: '24px',
-                  height: '24px',
+                  width: '20px',
+                  height: '20px',
                   objectFit: 'contain',
                   filter: 'brightness(0)',
                   opacity: 0.9,
@@ -239,8 +240,8 @@ function BrowserArtwork() {
                 src={logo}
                 alt="Tigera"
                 style={{
-                  width: '24px',
-                  height: '24px',
+                  width: '20px',
+                  height: '20px',
                   objectFit: 'contain',
                   filter: 'brightness(0)',
                   opacity: 0.9,
