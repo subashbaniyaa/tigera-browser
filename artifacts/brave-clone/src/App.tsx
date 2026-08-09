@@ -29,7 +29,6 @@ function Header() {
         <button className={`nav-item ${openNav === 'browser' ? 'active' : ''}`} onClick={() => toggleNav('browser')} data-testid="button-nav-browser">Browser <ChevronDown size={14} /></button>
         <button className={`nav-item ${openNav === 'search' ? 'active' : ''}`} onClick={() => toggleNav('search')} data-testid="button-nav-search">Search <ChevronDown size={14} /></button>
         <button className={`nav-item ${openNav === 'ai' ? 'active' : ''}`} onClick={() => toggleNav('ai')} data-testid="button-nav-ai">Private AI <ChevronDown size={14} /></button>
-        <button className={`nav-item ${openNav === 'business' ? 'active' : ''}`} onClick={() => toggleNav('business')} data-testid="button-nav-business">Tigera for business <ChevronDown size={14} /></button>
       </nav>
       <div className="header-actions">
         <button className="search-trigger" onClick={() => setSearchOpen(true)} aria-label="Search the Web" data-testid="button-open-search"><Search size={17} /><span>Search the Web</span></button>
@@ -40,7 +39,7 @@ function Header() {
         <div className="nav-dropdown" data-testid={`dropdown-${openNav}`}>
           {openNav === 'browser' && <><div className="dropdown-kicker">Tigera Browser</div><a href="#browser">The browser that puts you first <ArrowRight size={16} /></a><a href="#features">Browser features <ArrowRight size={16} /></a><a href="#download">Download Tigera <ArrowRight size={16} /></a></>}
           {openNav === 'search' && <><div className="dropdown-kicker">Tigera Search</div><a href="#search">Search without being tracked <ArrowRight size={16} /></a><a href="#search">How Tigera Search works <ArrowRight size={16} /></a></>}
-          {openNav === 'ai' && <><div className="dropdown-kicker">Leo, your AI assistant</div><a href="#leo">Ask Leo anything <ArrowRight size={16} /></a><a href="#leo">Private by design <ArrowRight size={16} /></a></>}
+          {openNav === 'ai' && <><div className="dropdown-kicker">Tigera AI, your AI assistant</div><a href="#leo">Ask tigera AI anything <ArrowRight size={16} /></a><a href="#leo">Private by design <ArrowRight size={16} /></a></>}
           {openNav === 'business' && <><div className="dropdown-kicker">Tigera for business</div><a href="#developers">Search API <ArrowRight size={16} /></a><a href="#developers">Tigera Ads <ArrowRight size={16} /></a></>}
         </div>
       )}
@@ -72,9 +71,9 @@ function BrowserArtwork() {
     <div className="browser-artwork" aria-label="Tigera browser interface illustration" data-testid="art-browser-window">
       <div className="browser-chrome"><div className="window-dots"><i /><i /><i /></div><span className="address-pill"><ShieldCheck size={13} /> tigera.com</span><span className="chrome-actions">•••</span></div>
       <div className="browser-page">
-        <div className="art-hero-line" /><div className="art-title">The web,<br /><em>without fear.</em></div>
+        <div className="art-hero-line" /><div className="art-title">The web,<br /><em>you can trust<br></br>without fear.</em></div>
         <div className="art-cards"><div className="art-card orange" /><div className="art-card violet" /><div className="art-card yellow" /></div>
-        <div className="floating-stat"><ShieldCheck size={15} /><div><strong>7 trackers blocked</strong></div></div>
+        <div className="floating-stat"><ShieldCheck size={15} /><div><strong>7 trackers blocked!</strong></div></div>
         <div className="cursor-arrow"><ArrowDownRight size={30} /></div>
       </div>
     </div>
@@ -105,9 +104,8 @@ function Home() {
       <Header />
       <main>
         <section className="hero-section" id="browser">
-          <div className="hero-background-word">TIGERA</div>
+          <div className="hero-background-word">tigera</div>
           <div className="hero-copy">
-            <div className="eyebrow reveal">Privacy, by default <span className="eyebrow-line" /></div>
             <h1 className="reveal reveal-delay-1">The browser<br />that <em>puts you first.</em></h1>
             <p className="hero-description reveal reveal-delay-2">Block ads. Save data. And browse faster. Tigera is a privacy-first browser that puts you back in control.</p>
             <div className="hero-buttons reveal reveal-delay-3"><a className="primary-button" href="#download" data-testid="button-hero-download">Get Tigera Browser <ArrowRight size={18} /></a><a className="text-button" href="#features" data-testid="link-hero-features">See how it works <ArrowDownRight size={17} /></a></div>
@@ -130,7 +128,7 @@ function Home() {
 
         <section className="privacy-section" id="privacy">
           <div className="privacy-orbit" />
-          <div className="privacy-content"><div className="eyebrow light">Built different <span className="eyebrow-line" /></div><h2>Your data.<br /><em>Still yours.</em></h2><p>Tigera is built on a simple idea: privacy is not a feature. It’s a right. Every Tigera product is designed to keep your information out of the hands of advertisers and data brokers.</p><a className="light-button" href="#download" data-testid="button-privacy-download">Take back your web <ArrowRight size={18} /></a></div>
+          <div className="privacy-content"><h2>Your data.<br /><em>Still yours.</em></h2><p>Tigera is built on a simple idea: privacy is not a feature. It’s a right. Every Tigera product is designed to keep your information out of the hands of advertisers and data brokers.</p><a className="light-button" href="#download" data-testid="button-privacy-download">Take back your web <ArrowRight size={18} /></a></div>
           <div className="privacy-list"><div className="privacy-list-heading">What Tigera blocks</div>{['Ads and trackers', 'Fingerprinting', 'Cross-site cookies', 'Surveillance capitalism'].map((item, i) => <div className="privacy-row" key={item}><span>0{i + 1}</span><strong>{item}</strong><Check size={17} /></div>)}</div>
         </section>
 
@@ -141,14 +139,14 @@ function Home() {
 
         <section className="developer-section" id="developers">
           <div className="developer-poster"><div className="poster-stamp">OPEN<br />SOURCE</div><div className="poster-word">BUILD<br /><em>TIGERA.</em></div><div className="poster-bottom"><span>For developers & teams</span><ArrowUpRightIcon /></div></div>
-          <div className="developer-copy"><div className="eyebrow">The bigger picture <span className="eyebrow-line" /></div><h2>An open web<br />needs <em>bold</em><br />people.</h2><p>Whether you’re building the next big thing or just looking for a better way to work, Tigera gives you tools that put people—not platforms—first.</p><div className="developer-links"><a href="#developers" data-testid="link-search-api">Tigera Search API <ArrowRight size={17} /></a><a href="#developers" data-testid="link-tigera-ads">Tigera Ads <ArrowRight size={17} /></a></div></div>
+          <div className="developer-copy"><h2>An open web<br />needs <em>bold</em><br />people.</h2><p>Whether you’re building the next big thing or just looking for a better way to work, Tigera gives you tools that put people—not platforms—first.</p><div className="developer-links"><a href="#developers" data-testid="link-search-api">Tigera Search API <ArrowRight size={17} /></a><a href="#developers" data-testid="link-tigera-ads">Tigera Ads <ArrowRight size={17} /></a></div></div>
         </section>
 
         <section className="faq-section">
            <div className="section-label"><span>Questions, answered</span><span>04 — 04</span></div><div className="faq-grid"><h2>Good to<br /><em>know.</em></h2><div className="faq-list">{faqs.map((faq, i) => <div className={`faq-item ${openFaq === i ? 'open' : ''}`} key={faq}><button onClick={() => setOpenFaq(openFaq === i ? null : i)} data-testid={`button-faq-${i}`}><span>{faq}</span>{openFaq === i ? <Minus size={19} /> : <Plus size={19} />}</button>{openFaq === i && <p>{i === 0 ? 'Most browsers collect information about what you do online. Tigera blocks trackers by default, so your browsing stays private and pages load faster.' : i === 1 ? 'Yes. Tigera Browser is free to download and use, with no hidden fees.' : i === 2 ? 'Yes. Import your bookmarks, passwords, extensions, and settings in just a few clicks.' : 'Tigera is independent, open-source, and built around your privacy—not an advertising business.'}</p>}</div>)}</div></div>
         </section>
 
-        <section className="download-section" id="download"><div className="download-art"><div className="download-sun" /><Globe2 size={120} strokeWidth={0.6} /><div className="download-orbit" /></div><div className="download-copy"><div className="eyebrow">Your web awaits <span className="eyebrow-line" /></div><h2>Browse<br /><em>boldly.</em></h2><p>It only takes a minute to make the switch.</p><a className="primary-button" href="#top" data-testid="button-final-download">Get Tigera browser for free <ArrowRight size={18} /></a><small>Available for Windows, macOS, Linux, iOS, and Android.</small></div></section>
+        <section className="download-section" id="download"><div className="download-art"><div className="download-sun" /><Globe2 size={120} strokeWidth={0.6} /><div className="download-orbit" /></div><div className="download-copy"><h2>Browse<br /><em>boldly.</em></h2><p>It only takes a minute to make the switch.</p><a className="primary-button" href="#top" data-testid="button-final-download">Get Tigera browser for free <ArrowRight size={18} /></a><small>Available for Windows, macOS, Linux, iOS, and Android.</small></div></section>
       </main>
        <footer className="site-footer"><div className="footer-main"><span className="brand-lockup"><img src={logo} alt="Tigera" className="brand-logo" /></span><p>The browser that puts you first.</p><div className="footer-socials"><a href="#top" data-testid="link-footer-x">X</a><a href="#top" data-testid="link-footer-github">GH</a><a href="#top" data-testid="link-footer-reddit">r/</a></div></div><div className="footer-links"><div><span>Products</span><a href="#browser">Browser</a><a href="#search">Search</a><a href="#leo">Tigera AI</a><a href="#privacy">VPN</a></div><div><span>Company</span><a href="#developers">About Tigera</a><a href="#developers">Careers</a><a href="#developers">Newsroom</a><a href="#developers">Help center</a></div><div><span>Legal</span><a href="#top">Privacy policy</a><a href="#top">Terms of use</a><a href="#top">Transparency</a><a href="#top">Status</a></div></div><div className="footer-bottom"><span>© 2026 Tigera Software, Inc.</span><span>Browse Boldly.</span></div></footer>
     </div>
