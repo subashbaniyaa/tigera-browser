@@ -149,7 +149,7 @@ function Home() {
         </section>
       </main>
       
-       <footer className="site-footer"><div className="footer-main"><span className="brand-lockup"><img src={logo} alt="Tigera" className="brand-logo" /></span><p>The browser that saves you time and protects your privacy.<br />Better privacy. Faster webpages. Easier navigation.</p>
+       <footer className="site-footer"><div className="footer-main"><span className="brand-lockup"><img src={logo} alt="Tigera" className="brand-logo" /></span><p>The browser that saves you time and protects your data.<br />Better privacy. Faster webpages. Easier navigation.</p>
         </div><div className="footer-bottom"><span>© 2026 Tigera Software, Inc.</span><span>Browse Boldly</span></div></footer>
     </div>
   );
