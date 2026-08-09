@@ -352,7 +352,44 @@ function Home() {
            <div className="section-label"><span> </span><span>04 — 04</span></div><div className="faq-grid"><h2>Good to<br /> know the <em>answers.</em></h2><div className="faq-list">{faqs.map((faq, i) => <div className={`faq-item ${openFaq === i ? 'open' : ''}`} key={faq}><button onClick={() => setOpenFaq(openFaq === i ? null : i)} data-testid={`button-faq-${i}`}><span>{faq}</span>{openFaq === i ? <Minus size={19} /> : <Plus size={19} />}</button>{openFaq === i && <p>{i === 0 ? 'Most browsers collect information about what you do online. Tigera blocks trackers by default, so your browsing stays private and pages load faster.' : i === 1 ? 'Yes. Tigera Browser is free to download and use, with no hidden fees.' : i === 2 ? 'Yes. Import your bookmarks, passwords, extensions, and settings in just a few clicks.' : 'Tigera is independent, open-source, and built around your privacy—not an advertising business.'}</p>}</div>)}</div></div>
         </section>
 
-        <section className="download-section" id="download"><div className="download-art"><div className="download-sun" /><Globe2 size={120} strokeWidth={0.6} /><div className="download-orbit" /></div><div className="download-copy"><h2>Browse<br /><em>boldly</em></h2><a className="primary-button" href="#top" data-testid="button-final-download">Get Tigera for free <ArrowRight size={18} /></a></div>
+        <section className="download-section" id="download">
+          <div className="download-art">
+            <div className="download-sun" />
+            <Globe2 size={120} strokeWidth={0.6} />
+            <div className="download-orbit" />
+          </div>
+
+          <div className="download-copy">
+            <h2>
+              Browse
+              <br />
+              <em>boldly</em>
+            </h2>
+
+            <p
+              style={{
+                color: 'white',
+                margin: '0 0 18px',
+                maxWidth: '450px',
+                fontSize: '15px',
+                lineHeight: 1.5,
+                fontWeight: 500,
+                letterSpacing: '-0.02em',
+                opacity: 0.68,
+              }}
+            >
+              Download Tigera for Android, iOS, Linux, macOS, or Windows.
+            </p>
+
+            <a
+              className="primary-button"
+              href="#top"
+              data-testid="button-final-download"
+            >
+              Get Tigera for free
+              <ArrowRight size={18} />
+            </a>
+          </div>
         </section>
       </main>
       
