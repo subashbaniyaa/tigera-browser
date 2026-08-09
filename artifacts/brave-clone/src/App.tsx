@@ -151,7 +151,7 @@ function Home() {
       </main>
       
        <footer className="site-footer"><div className="footer-main"><span className="brand-lockup"><img src={logo} alt="Tigera" className="brand-logo" /></span><p>The browser that puts you first.</p>
-         <div className="footer-socials"><a href="#top" data-testid="link-footer-x">X</a><a href="#top" data-testid="link-footer-github">GH</a><a href="#top" data-testid="link-footer-reddit">r/</a></div></div><div className="footer-links"><div><span>Products</span><a href="#browser">Browser</a><a href="#search">Search</a><a href="#leo">Tigera AI</a><a href="#privacy">VPN</a></div><div><span>Company</span><a href="#developers">About Tigera</a><a href="#developers">Careers</a><a href="#developers">Newsroom</a><a href="#developers">Help center</a></div><div><span>Legal</span><a href="#top">Privacy policy</a><a href="#top">Terms of use</a><a href="#top">Transparency</a><a href="#top">Status</a></div></div><div className="footer-bottom"><span>© 2026 Tigera Software, Inc.</span><span>Browse Boldly.</span></div></footer>
+        </div><div className="footer-bottom"><span>© 2026 Tigera Software, Inc.</span><span>Browse Boldly</span></div></footer>
     </div>
   );
 }
