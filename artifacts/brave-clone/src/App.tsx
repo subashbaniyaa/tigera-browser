@@ -67,13 +67,220 @@ function Header() {
 
 function BrowserArtwork() {
   return (
-    <div className="browser-artwork" aria-label="Tigera browser interface illustration" data-testid="art-browser-window">
-      <div className="browser-chrome"><div className="window-dots"><i /><i /><i /></div><span className="address-pill"><ShieldCheck size={13} /> tigera.com</span><span className="chrome-actions">•••</span></div>
+    <div
+      className="browser-artwork"
+      aria-label="Tigera browser interface illustration"
+      data-testid="art-browser-window"
+    >
+      <div className="browser-chrome">
+        <div className="window-dots">
+          <i />
+          <i />
+          <i />
+        </div>
+
+        <span className="address-pill">
+          <ShieldCheck size={13} />
+          tigera.com
+        </span>
+
+        <span className="chrome-actions">•••</span>
+      </div>
+
       <div className="browser-page">
-        <div className="art-hero-line" /><div className="art-title">The web,<br /><em>you can trust<br></br>without fear.</em></div>
-        <div className="art-cards"><div className="art-card orange" /><div className="art-card violet" /><div className="art-card yellow" /></div>
-        <div className="floating-stat"><ShieldCheck size={15} /><div><strong>7 trackers blocked!</strong></div></div>
-        <div className="cursor-arrow"><ArrowDownRight size={30} /></div>
+
+        <div className="art-title">
+          The web,
+          <br />
+          <em>
+            you can trust
+            <br />
+            without fear.
+          </em>
+        </div>
+
+        <div className="art-cards">
+
+          {/* ORANGE CARD */}
+          <div
+            className="art-card orange"
+            style={{
+              position: 'relative',
+              overflow: 'hidden',
+            }}
+          >
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                padding: '18px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                color: '#111',
+              }}
+            >
+              <img
+                src={logo}
+                alt="Tigera"
+                style={{
+                  width: '24px',
+                  height: '24px',
+                  objectFit: 'contain',
+                  filter: 'brightness(0)',
+                  opacity: 0.9,
+                }}
+              />
+
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '5px',
+                }}
+              >
+                <strong
+                  style={{
+                    fontFamily: 'inherit',
+                    fontSize: 'clamp(15px, 1.7vw, 22px)',
+                    lineHeight: 0.96,
+                    fontWeight: 800,
+                    letterSpacing: '-0.055em',
+                  }}
+                >
+                  Better
+                  <br />
+                  privacy
+                </strong>
+
+               
+              </div>
+            </div>
+          </div>
+
+
+          {/* PURPLE CARD */}
+          <div
+            className="art-card violet"
+            style={{
+              position: 'relative',
+              overflow: 'hidden',
+            }}
+          >
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                padding: '18px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                color: '#111',
+              }}
+            >
+              <img
+                src={logo}
+                alt="Tigera"
+                style={{
+                  width: '24px',
+                  height: '24px',
+                  objectFit: 'contain',
+                  filter: 'brightness(0)',
+                  opacity: 0.9,
+                }}
+              />
+
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '5px',
+                }}
+              >
+                <strong
+                  style={{
+                    fontFamily: 'inherit',
+                    fontSize: 'clamp(15px, 1.7vw, 22px)',
+                    lineHeight: 0.96,
+                    fontWeight: 800,
+                    letterSpacing: '-0.055em',
+                  }}
+                >
+                  Faster
+                  <br />
+                  webpages
+                </strong>
+
+              </div>
+            </div>
+          </div>
+
+
+          {/* YELLOW CARD */}
+          <div
+            className="art-card yellow"
+            style={{
+              position: 'relative',
+              overflow: 'hidden',
+            }}
+          >
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                padding: '18px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                color: '#111',
+              }}
+            >
+              <img
+                src={logo}
+                alt="Tigera"
+                style={{
+                  width: '24px',
+                  height: '24px',
+                  objectFit: 'contain',
+                  filter: 'brightness(0)',
+                  opacity: 0.9,
+                }}
+              />
+
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '5px',
+                }}
+              >
+                <strong
+                  style={{
+                    fontFamily: 'inherit',
+                    fontSize: 'clamp(15px, 1.7vw, 22px)',
+                    lineHeight: 0.96,
+                    fontWeight: 800,
+                    letterSpacing: '-0.055em',
+                  }}
+                >
+                  Easier
+                  <br />
+                  navigation
+                </strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* ORIGINAL TRACKER BOX */}
+        <div className="floating-stat">
+          <ShieldCheck size={15} />
+          <div>
+            <strong>7 trackers blocked!</strong>
+          </div>
+        </div>
+
       </div>
     </div>
   );
