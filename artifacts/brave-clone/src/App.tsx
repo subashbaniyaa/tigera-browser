@@ -104,7 +104,7 @@ function Home() {
       <Header />
       <main>
         <section className="hero-section" id="browser">
-          <div className="hero-background-word">tigera</div>
+          <div className="hero-background-word"> </div>
           <div className="hero-copy">
             <h1 className="reveal reveal-delay-1">The browser<br />that <em>puts you first.</em></h1>
             <p className="hero-description reveal reveal-delay-2">Block ads. Save data. And browse faster. Tigera is a privacy-first browser that puts you back in control.</p>
